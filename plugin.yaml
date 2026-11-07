@@ -1,0 +1,22 @@
+name: omlx
+kind: model-provider
+version: "0.1.0"
+description: Managed oMLX runtime and MLX model library for Hermes Desktop on Apple Silicon.
+author: vitaliy-blprnt
+license: MIT
+requires_hermes: ">=0.23.0"
+python_dependencies:
+  - "psutil>=5.9,<9"
+  - "fastapi>=0.100,<1"
+  - "httpx>=0.27,<1"
+  - "openai>=1.0,<3"
+provides_tools: []
+provides_hooks: []
+provides_middleware: []
+requires_env: []
+config_schema:
+  local_api_key:
+    type: secret
+    env: HERMES_OMLX_LOCAL_API_KEY
+    required: false
+    description: Local server authentication. Generated when first turned on; changing it requires a server restart.

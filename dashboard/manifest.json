@@ -1,0 +1,11 @@
+{
+  "name": "omlx",
+  "label": "Local Models · oMLX",
+  "description": "Manage the private Apple Silicon oMLX runtime and public MLX model snapshots.",
+  "icon": "Cpu",
+  "version": "0.1.0",
+  "tab": {"path": "/omlx", "position": "after:models"},
+  "entry": "dist/index.js",
+  "css": "dist/style.css",
+  "api": "plugin_api.py"
+}
